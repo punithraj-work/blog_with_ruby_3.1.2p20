@@ -1,0 +1,69 @@
+Started GET "/articles" for 127.0.0.1 at 2022-07-12 13:31:47 +0530
+  [1m[35m (7.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+Started GET "/articles" for 127.0.0.1 at 2022-07-12 13:31:48 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+Started GET "/articles" for 127.0.0.1 at 2022-07-12 13:32:46 +0530
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+Started GET "/articles" for 127.0.0.1 at 2022-07-12 13:32:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+Started GET "/articles" for 127.0.0.1 at 2022-07-12 13:32:48 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+Started GET "/articles" for 127.0.0.1 at 2022-07-12 13:33:31 +0530
+  
+ActionController::RoutingError (uninitialized constant ArticlesController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  AbstractController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/articles" for 127.0.0.1 at 2022-07-12 13:33:32 +0530
+  
+ActionController::RoutingError (uninitialized constant ArticlesController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  AbstractController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/articles" for 127.0.0.1 at 2022-07-12 13:34:08 +0530
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 151)
+  Rendered layout layouts/application.html.erb (Duration: 179.5ms | Allocations: 95621)
+Completed 200 OK in 186ms (Views: 181.5ms | Allocations: 98308)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-12 13:41:03 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/punithrjgs/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/punithrjgs/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 330)
+Completed 200 OK in 3ms (Views: 2.0ms | Allocations: 1126)
+
+
+Started GET "/articles" for 127.0.0.1 at 2022-07-12 13:41:10 +0530
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 149)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 3012)
+Completed 200 OK in 5ms (Views: 4.8ms | Allocations: 3875)
+
+
