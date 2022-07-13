@@ -7795,3 +7795,337 @@ ActionView::Template::Error (undefined method `errors' for nil:NilClass
 app/views/articles/_form.html.erb:5
 app/views/articles/_form.html.erb:1
 app/views/articles/edit.html.erb:3
+Started GET "/articles/1/edit" for 127.0.0.1 at 2022-07-13 20:39:42 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 6.1ms | Allocations: 3671)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 7.4ms | Allocations: 3970)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4064)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4769)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass
+
+'.freeze;     article.errors.full_messages_for(:title).each do |message| 
+                     ^^^^^^^):
+    2:   <div>
+    3:     <%= form.label :title %><br>
+    4:     <%= form.text_field :title %>
+    5:     <% article.errors.full_messages_for(:title).each do |message| %>
+    6:       <div><%= message %></div>
+    7:     <% end %>
+    8:   </div>
+  
+app/views/articles/_form.html.erb:5
+app/views/articles/_form.html.erb:1
+app/views/articles/edit.html.erb:3
+Started GET "/articles/" for 127.0.0.1 at 2022-07-13 20:39:45 +0530
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:7
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1140)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3913)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.2ms | Allocations: 4333)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2022-07-13 20:39:47 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2565)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.3ms | Allocations: 4020)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2022-07-13 20:39:50 +0530
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 2.7ms | Allocations: 1036)
+  Rendered articles/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1243)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3470)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 3834)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2022-07-13 20:39:55 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 3.1ms | Allocations: 3266)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 3.4ms | Allocations: 3350)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 3439)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3683)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass
+
+'.freeze;     article.errors.full_messages_for(:title).each do |message| 
+                     ^^^^^^^):
+    2:   <div>
+    3:     <%= form.label :title %><br>
+    4:     <%= form.text_field :title %>
+    5:     <% article.errors.full_messages_for(:title).each do |message| %>
+    6:       <div><%= message %></div>
+    7:     <% end %>
+    8:   </div>
+  
+app/views/articles/_form.html.erb:5
+app/views/articles/_form.html.erb:1
+app/views/articles/edit.html.erb:3
+Started GET "/articles/1/edit" for 127.0.0.1 at 2022-07-13 20:40:00 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 3.3ms | Allocations: 3265)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 3.7ms | Allocations: 3349)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3437)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3678)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass
+
+'.freeze;     article.errors.full_messages_for(:title).each do |message| 
+                     ^^^^^^^):
+    2:   <div>
+    3:     <%= form.label :title %><br>
+    4:     <%= form.text_field :title %>
+    5:     <% article.errors.full_messages_for(:title).each do |message| %>
+    6:       <div><%= message %></div>
+    7:     <% end %>
+    8:   </div>
+  
+app/views/articles/_form.html.erb:5
+app/views/articles/_form.html.erb:1
+app/views/articles/edit.html.erb:3
+Started GET "/articles/1/edit" for 127.0.0.1 at 2022-07-13 20:40:47 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 5.8ms | Allocations: 3672)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 7.4ms | Allocations: 3971)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 4065)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 4748)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass
+
+'.freeze;     @article.errors.full_messages_for(:title).each do |message| 
+                      ^^^^^^^):
+    2:   <div>
+    3:     <%= form.label :title %><br>
+    4:     <%= form.text_field :title %>
+    5:     <% @article.errors.full_messages_for(:title).each do |message| %>
+    6:       <div><%= message %></div>
+    7:     <% end %>
+    8:   </div>
+  
+app/views/articles/_form.html.erb:5
+app/views/articles/_form.html.erb:1
+app/views/articles/edit.html.erb:3
+Started GET "/articles/1/edit" for 127.0.0.1 at 2022-07-13 20:40:49 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 3.5ms | Allocations: 3267)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3351)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 3439)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3699)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass
+
+'.freeze;     @article.errors.full_messages_for(:title).each do |message| 
+                      ^^^^^^^):
+    2:   <div>
+    3:     <%= form.label :title %><br>
+    4:     <%= form.text_field :title %>
+    5:     <% @article.errors.full_messages_for(:title).each do |message| %>
+    6:       <div><%= message %></div>
+    7:     <% end %>
+    8:   </div>
+  
+app/views/articles/_form.html.erb:5
+app/views/articles/_form.html.erb:1
+app/views/articles/edit.html.erb:3
+Started GET "/articles/1/edit" for 127.0.0.1 at 2022-07-13 20:40:52 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 3.5ms | Allocations: 3670)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 5.1ms | Allocations: 3969)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 4063)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 4746)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass
+
+'.freeze;     article.errors.full_messages_for(:title).each do |message| 
+                     ^^^^^^^):
+    2:   <div>
+    3:     <%= form.label :title %><br>
+    4:     <%= form.text_field :title %>
+    5:     <% article.errors.full_messages_for(:title).each do |message| %>
+    6:       <div><%= message %></div>
+    7:     <% end %>
+    8:   </div>
+  
+app/views/articles/_form.html.erb:5
+app/views/articles/_form.html.erb:1
+app/views/articles/edit.html.erb:3
+Started GET "/articles/1/edit" for 127.0.0.1 at 2022-07-13 20:41:43 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 4.7ms | Allocations: 3670)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3969)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4063)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4765)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass
+
+'.freeze;     article.errors.full_messages_for(:title).each do |message| 
+                     ^^^^^^^):
+    2:   <div>
+    3:     <%= form.label :title %><br>
+    4:     <%= form.text_field :title %>
+    5:     <% article.errors.full_messages_for(:title).each do |message| %>
+    6:       <div><%= message %></div>
+    7:     <% end %>
+    8:   </div>
+  
+app/views/articles/_form.html.erb:5
+app/views/articles/_form.html.erb:1
+app/views/articles/edit.html.erb:3
+Started GET "/articles" for 127.0.0.1 at 2022-07-13 20:41:46 +0530
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:7
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1046)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3825)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 4188)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2022-07-13 20:41:48 +0530
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 3.4ms | Allocations: 1036)
+  Rendered articles/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1242)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3469)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 3835)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2022-07-13 20:41:51 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 218)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2604)
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 3429)
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2022-07-13 20:41:54 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 2.9ms | Allocations: 3265)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3349)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 3437)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3678)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass
+
+'.freeze;     article.errors.full_messages_for(:title).each do |message| 
+                     ^^^^^^^):
+    2:   <div>
+    3:     <%= form.label :title %><br>
+    4:     <%= form.text_field :title %>
+    5:     <% article.errors.full_messages_for(:title).each do |message| %>
+    6:       <div><%= message %></div>
+    7:     <% end %>
+    8:   </div>
+  
+app/views/articles/_form.html.erb:5
+app/views/articles/_form.html.erb:1
+app/views/articles/edit.html.erb:3
+Started GET "/articles/1" for 127.0.0.1 at 2022-07-13 20:42:08 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2449)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.4ms | Allocations: 3209)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2022-07-13 20:43:24 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 142)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 14924)
+Completed 200 OK in 38ms (Views: 28.6ms | ActiveRecord: 1.1ms | Allocations: 19665)
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2022-07-13 20:43:26 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:40:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 1.9ms | Allocations: 1229)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1317)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3536)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 4362)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2022-07-13 20:43:35 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:40:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 1.4ms | Allocations: 1036)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1117)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3336)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 4086)
+
+

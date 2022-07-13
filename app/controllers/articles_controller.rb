@@ -35,6 +35,10 @@ class ArticlesController < ApplicationController
       render :edit, status: :unprocessable_entity
     end
   end
+
+  def edit
+    @article = Article.find(params[:id])
+  end
   
   private
     def article_params
