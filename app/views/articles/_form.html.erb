@@ -19,18 +19,33 @@
 
     <%= form.label :city %><br>
     <%= form.text_area :city %><br>
-
+   <div class="form-group">
+    <%= form.label :city %>
     
-  <h4>Select2</h4>
-
-    <select class="country"
+    <%
+=begin%>
+ <%= form.collection_select :city, @allarticles, :title, :body, {include_blank: true}, :multiple: true, class: "select2 form-control" %>  
+<%
+=end%>
+    <%= form.collection_select:city, @allarticles, :title, :body, {include_blank: true}, :multiple => true, class: "select2 form-control" %>
+    <%
+=begin%>
+ <%= ap.collection_select(:admin_permission_ids, @admin_permissions, :id, :name, {:selected => @admin_role.admin_permission_ids}, :multiple => true) %> 
+<%
+=end%>
+  </div>
+    <h4>Selections using Select2</h4>
+            <%
+=begin%>
+ <select class="country"
                     multiple="true"
-                    style="width: 200px;" <%= form.text_area :city %>>
+                    style="width: 200px;">
                 <option value="1">India</option>
                 <option value="2">Japan</option>
                 <option value="3">France</option>
-            </select>
-            <br>
+            </select> 
+<%
+=end%>
   </div>
 
   <div>

@@ -6,6 +6,9 @@ ruby "3.1.2"
 # Bundle for Filterrific
 gem 'filterrific'
 
+#Select2 Gem file
+gem "select2-rails"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3"
 
