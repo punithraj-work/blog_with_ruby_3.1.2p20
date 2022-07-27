@@ -15,75 +15,85 @@
     <% end %>
   </div>
 
-  <div class="col-sm-8">
-
+  <%
+=begin%>
+ <div class="col-sm-8">
     <%= form.label :city %><br>
-    <%= form.text_area :city %><br>
-   <div class="form-group">
-    <%= form.label :city %>
+    <%= form.text_area :city %><br> 
+  </div> 
+<%
+=end%>
+
+ <div class="formtest form-group" data-controller='select2'>
+    <%= form.label :city%> <br>
+    <%#= form.select :city, options_from_collection_for_select(@allarticles, 'title', 'body', {:multiple => true, :class => "form-control content-search"}) %>
+    <%#= ap.collection_select(:admin_permission_ids, @admin_permissions, :id, :name, {:selected => @admin_role.admin_permission_ids}, :multiple => true) %>
+    <%= form.collection_select(:city, @allarticles, :title, :body, {:multiple => true, :class => "form-control content-search"}) %>
+
+    <%#= form.select :city, Article.all.map { |user| user.body }, {include_blank: false, required: true, include_hidden: false}, class: 'form-control content-search' %>
+    <%#= form.select :city, options_for_select([["Dollar", "$"], ["Kroner", "DKK"]]),{include_blank: true}, multiple: true, class:'punith' %> 
     
-    <%
-=begin%>
- <%= form.collection_select :city, @allarticles, :title, :body, {include_blank: true}, :multiple: true, class: "select2 form-control" %>  
-<%
-=end%>
-    <%= form.collection_select:city, @allarticles, :title, :body, {include_blank: true}, :multiple => true, class: "select2 form-control" %>
-    <%
-=begin%>
- <%= ap.collection_select(:admin_permission_ids, @admin_permissions, :id, :name, {:selected => @admin_role.admin_permission_ids}, :multiple => true) %> 
-<%
-=end%>
   </div>
-    <h4>Selections using Select2</h4>
-            <%
+<%
 =begin%>
- <select class="country"
+ 
+  <div class="form-group" data-controller='select2'>
+    <%= form.select :city, @allarticles.all.map { |user| user.body }, {include_blank: false, required: false, include_hidden: false}, class: 'select2 form-control content-search' %>
+  </div> 
+<%
+=end%>
+
+    <%
+=begin%>
+ <h4>Selections using Select2</h4>
+              <select class="select2"
                     multiple="true"
                     style="width: 200px;">
                 <option value="1">India</option>
                 <option value="2">Japan</option>
                 <option value="3">France</option>
-            </select> 
+              </select> 
+        
 <%
-=end%>
-  </div>
-
-  <div>
+=end%>    
+  <div> 
     <%= form.submit %>
   </div>
 <% end %>
 
-<script src=
+ 
+ <%
+=begin%>
+ <script src=
   "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-</script>
-
+</script> 
+<%
+=end%>
 
         <!--These jQuery libraries for 
            chosen need to be included-->
-        <script src=
+        <%
+=begin%>
+ <script src=
 "https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js">
+        
         </script>
         <link rel="stylesheet" 
               href=
-"https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.min.css" />
+"https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.min.css" /> 
+<%
+=end%>
   
         <!--These jQuery libraries for select2 
             need to be included-->
-        <script src=
+        <%
+=begin%>
+ <script src=
 "https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js">
        </script>
         <link rel="stylesheet" 
               href=
-"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" />
-        <script>
-            $(document).ready(function () {
-                //Select2
-                $(".country").select2({
-                    maximumSelectionLength: 3,
-                });
-                //Chosen
-                $(".country1").chosen({
-                    max_selected_options: 1,
-                });
-            });
-        </script>
+"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" /> 
+<%
+=end%>
+  
